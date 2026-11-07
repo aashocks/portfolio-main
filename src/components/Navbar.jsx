@@ -29,6 +29,14 @@ export default function Navbar() {
     return () => document.removeEventListener('keydown', onKey)
   }, [open])
 
+  // Close the menu if the viewport grows to desktop width (e.g. rotating a tablet).
+  useEffect(() => {
+    const query = window.matchMedia('(min-width: 900px)')
+    const onChange = (event) => event.matches && setOpen(false)
+    query.addEventListener('change', onChange)
+    return () => query.removeEventListener('change', onChange)
+  }, [])
+
   const closeMenu = () => setOpen(false)
 
   return (

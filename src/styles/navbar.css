@@ -25,10 +25,16 @@
 .availability--card, .availability--mobile { display: inline-flex; }
 .nav__cta { display: none; }
 .nav__toggle {
-  width: 44px; height: 44px; display: grid; place-items: center; border-radius: 12px;
+  position: relative; z-index: 2; width: 44px; height: 44px; display: grid; place-items: center; border-radius: 12px;
   border: 1px solid var(--border); background: var(--card);
+  touch-action: manipulation; -webkit-tap-highlight-color: transparent;
 }
-.nav__mobile { background: rgba(10, 10, 10, 0.97); border-bottom: 1px solid var(--border); overflow: hidden; }
+.nav__toggle svg { pointer-events: none; }
+.nav__mobile {
+  position: absolute; top: 100%; left: 0; right: 0; z-index: 1;
+  max-height: calc(100svh - var(--nav-h)); overflow-y: auto; overscroll-behavior: contain;
+  background: #0a0a0a; border-bottom: 1px solid var(--border);
+}
 .nav__mobile-inner { display: flex; flex-direction: column; padding: 12px 0 24px; gap: 4px; }
 .nav__mobile-link { padding: 14px 4px; font-size: 1.15rem; font-family: var(--font-display); color: var(--text-2); border-bottom: 1px solid var(--border); }
 .nav__mobile-link.is-active { color: var(--text); }
