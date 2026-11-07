@@ -4,6 +4,7 @@ import { Menu, X } from 'lucide-react'
 import Button from './Button'
 import { site } from '../data/site'
 import { useActiveSection } from '../hooks/useActiveSection'
+import { scrollToSection } from '../lib/scrollToSection'
 
 const links = [
   { id: 'home', label: 'Home' },
@@ -37,7 +38,12 @@ export default function Navbar() {
     return () => query.removeEventListener('change', onChange)
   }, [])
 
-  const closeMenu = () => setOpen(false)
+  const goTo = (event, id) => {
+    event.preventDefault()
+    setOpen(false)
+    // Let the menu start closing first, then scroll.
+    window.setTimeout(() => scrollToSection(id), 80)
+  }
 
   return (
     <header className={`nav ${scrolled || open ? 'nav--solid' : ''}`}>
@@ -54,6 +60,7 @@ export default function Navbar() {
                 key={link.id}
                 href={`#${link.id}`}
                 className={`nav__link ${isActive ? 'is-active' : ''}`}
+                onClick={(event) => goTo(event, link.id)}
                 aria-current={isActive ? 'true' : undefined}
               >
                 {isActive ? (
@@ -106,7 +113,7 @@ export default function Navbar() {
                   key={link.id}
                   href={`#${link.id}`}
                   className={`nav__mobile-link ${active === link.id ? 'is-active' : ''}`}
-                  onClick={closeMenu}
+                  onClick={(event) => goTo(event, link.id)}
                   initial={{ opacity: 0, x: -12 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.05 + index * 0.05 }}
