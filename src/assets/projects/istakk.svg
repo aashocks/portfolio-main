@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#6d28d9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect x="100" y="80" width="1000" height="590" rx="26" fill="#0b0f1d" stroke="#2a2f45" stroke-width="2"/>
+  <!-- stat cards -->
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="140" y="120" width="290" height="120" rx="18" fill="#151a2e"/><text x="170" y="165" font-size="22" fill="#94a3b8">Total products</text><text x="170" y="212" font-size="46" font-weight="700" fill="#fff">1,284</text>
+    <rect x="455" y="120" width="290" height="120" rx="18" fill="#151a2e"/><text x="485" y="165" font-size="22" fill="#94a3b8">In stock</text><text x="485" y="212" font-size="46" font-weight="700" fill="#fff">9,430</text>
+    <rect x="770" y="120" width="290" height="120" rx="18" fill="#151a2e"/><text x="800" y="165" font-size="22" fill="#94a3b8">Low stock</text><text x="800" y="212" font-size="46" font-weight="700" fill="#fbbf24">37</text>
+  </g>
+  <!-- chart -->
+  <rect x="140" y="270" width="470" height="360" rx="18" fill="#151a2e"/>
+  <g fill="url(#bar)">
+    <rect x="180" y="470" width="44" height="120" rx="8"/>
+    <rect x="250" y="410" width="44" height="180" rx="8"/>
+    <rect x="320" y="440" width="44" height="150" rx="8"/>
+    <rect x="390" y="350" width="44" height="240" rx="8"/>
+    <rect x="460" y="390" width="44" height="200" rx="8"/>
+    <rect x="530" y="320" width="44" height="270" rx="8"/>
+  </g>
+  <!-- table -->
+  <rect x="635" y="270" width="425" height="360" rx="18" fill="#151a2e"/>
+  <g>
+    <rect x="665" y="300" width="130" height="14" rx="7" fill="#fff" fill-opacity="0.5"/>
+    <rect x="945" y="300" width="80" height="14" rx="7" fill="#fff" fill-opacity="0.5"/>
+    <line x1="665" y1="336" x2="1030" y2="336" stroke="#2a2f45" stroke-width="2"/>
+    <rect x="665" y="362" width="170" height="14" rx="7" fill="#fff" fill-opacity="0.8"/><rect x="965" y="362" width="60" height="14" rx="7" fill="#22c55e" fill-opacity="0.8"/>
+    <rect x="665" y="414" width="140" height="14" rx="7" fill="#fff" fill-opacity="0.8"/><rect x="965" y="414" width="60" height="14" rx="7" fill="#fbbf24" fill-opacity="0.8"/>
+    <rect x="665" y="466" width="190" height="14" rx="7" fill="#fff" fill-opacity="0.8"/><rect x="965" y="466" width="60" height="14" rx="7" fill="#22c55e" fill-opacity="0.8"/>
+    <rect x="665" y="518" width="120" height="14" rx="7" fill="#fff" fill-opacity="0.8"/><rect x="965" y="518" width="60" height="14" rx="7" fill="#ef4444" fill-opacity="0.8"/>
+    <rect x="665" y="570" width="160" height="14" rx="7" fill="#fff" fill-opacity="0.8"/><rect x="965" y="570" width="60" height="14" rx="7" fill="#22c55e" fill-opacity="0.8"/>
+  </g>
+</svg>
