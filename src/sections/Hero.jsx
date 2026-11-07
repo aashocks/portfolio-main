@@ -4,7 +4,7 @@ import { ArrowRight, Film } from 'lucide-react'
 import { FaReact } from 'react-icons/fa'
 import Button from '../components/Button'
 import { site } from '../data/site'
-import profileImage from '../assets/images/profile.svg'
+import profileImage from '../assets/images/profile.JPG'
 
 const HEADING = [
   { text: 'Building' },

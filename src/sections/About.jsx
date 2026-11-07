@@ -4,7 +4,7 @@ import SectionHeading from '../components/SectionHeading'
 import SkillCard from '../components/SkillCard'
 import { site } from '../data/site'
 import { services, skillGroups } from '../data/skills'
-import profileImage from '../assets/images/profile.svg'
+import profileImage from '../assets/images/profile.JPG'
 
 export default function About() {
   return (

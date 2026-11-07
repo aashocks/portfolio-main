@@ -8,7 +8,7 @@ export const site = {
 
   // CUSTOMIZE: your real email. While this still says the placeholder, the
   // contact section shows it as plain text instead of a clickable mailto link.
-  email: 'hello@yourdomain.com',
+  email: 'allenformento828@gmail.com',
 
   // CUSTOMIZE: your location label (shown on the About image).
   location: 'Philippines',

@@ -70,7 +70,7 @@ export const projects = [
       'Loading and error handling',
     ],
     liveUrl: '', // CUSTOMIZE
-    githubUrl: '', // CUSTOMIZE
+    githubUrl: 'https://github.com/aashocks/weather-app-react', // CUSTOMIZE
   },
   {
     id: 'istakk',
@@ -95,7 +95,7 @@ export const projects = [
       'Organized records backed by a MySQL database',
     ],
     liveUrl: '', // CUSTOMIZE
-    githubUrl: '', // CUSTOMIZE
+    githubUrl: 'https://github.com/aashocks/istakk-inventory-management-php', // CUSTOMIZE
   },
   {
     id: 'video-editing',
