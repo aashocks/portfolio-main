@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { Download } from 'lucide-react'
 import { resume } from '../data/site'
 
-// Downloads /resume.pdf (public/resume.pdf) under a friendly filename.
+// Downloads /resume.pdf (public/Allen_Aldrich_Formento_Resume.pdf) under a friendly filename.
 export default function ResumeButton({ className = '' }) {
   // Only show the button when the PDF is really deployed, so visitors never
   // download a 404 page. (Hosts without a file return 404 or an HTML fallback.)
