@@ -40,3 +40,12 @@
 @media (min-width: 800px) { .footer__top { flex-direction: row; justify-content: space-between; align-items: flex-start; } }
 
 @media (hover: none), (pointer: coarse) { .cursor, .cursor__ring { display: none; } }
+
+/* Resume download button */
+.btn--resume { background: transparent; color: var(--text); border-color: rgba(139, 92, 246, 0.55); }
+.btn--resume:hover { background: var(--accent-soft); border-color: var(--accent); box-shadow: 0 10px 30px rgba(124, 58, 237, 0.25); }
+.btn__icon--download svg { transition: transform 0.25s ease; }
+.btn--resume:hover .btn__icon--download svg, .btn--resume:focus-visible .btn__icon--download svg { transform: translateY(3px); }
+.about__cta { margin-top: 28px; }
+@media (max-width: 520px) { .hero__actions .btn { width: 100%; } .about__cta .btn { width: 100%; } }
+@media (prefers-reduced-motion: reduce) { .btn__icon--download svg { transition: none; } .btn--resume:hover .btn__icon--download svg { transform: none; } }

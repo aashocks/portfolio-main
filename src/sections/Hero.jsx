@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { ArrowRight, Film } from 'lucide-react'
 import { FaReact } from 'react-icons/fa'
 import Button from '../components/Button'
+import ResumeButton from '../components/ResumeButton'
 import { site } from '../data/site'
 import profileImage from '../assets/images/profile.JPG'
 
@@ -106,6 +107,7 @@ export default function Hero() {
             <Button href="#contact" variant="ghost">
               Let&apos;s Talk
             </Button>
+            <ResumeButton />
           </motion.div>
         </motion.div>
 

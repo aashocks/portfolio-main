@@ -1,5 +1,6 @@
 import { MapPin } from 'lucide-react'
 import Reveal from '../components/Reveal'
+import ResumeButton from '../components/ResumeButton'
 import SectionHeading from '../components/SectionHeading'
 import SkillCard from '../components/SkillCard'
 import { site } from '../data/site'
@@ -53,6 +54,10 @@ export default function About() {
                 </Reveal>
               ))}
             </ul>
+
+            <Reveal delay={0.3} className="about__cta">
+              <ResumeButton />
+            </Reveal>
           </div>
         </div>
 
