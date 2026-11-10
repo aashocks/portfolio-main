@@ -33,8 +33,8 @@ export const site = {
 export const PLACEHOLDER_EMAIL = 'hello@yourdomain.com'
 export const hasRealEmail = site.email !== PLACEHOLDER_EMAIL
 
-// Resume download. Put your PDF at public/resume.pdf.
+// Resume download. Put your PDF in public/ and match the name below.
 export const resume = {
-  path: '/resume.pdf',
-  filename: 'Allen-Aldrich-Formento-Resume.pdf',
+  path: '/Allen_Aldrich_Formento_Resume.pdf',
+  filename: 'Allen_Aldrich_Formento_Resume.pdf',
 }
